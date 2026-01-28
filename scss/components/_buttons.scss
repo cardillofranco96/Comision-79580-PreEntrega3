@@ -1,18 +1,22 @@
+@use "../abstracts/mixins" as m;
+
 .btn-flama {
-  background: #ff2a00;
-  color: white;
+  background: #ff4500;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
   border: none;
-  @include glow-hover(#ff4500);
+  @include m.glow-hover(#ff4500);
 }
 
 .btn-wsp {
   background: #25d366;
-  color: white;
-  @include glow-hover(#25d366);
+  color: #fff;
+  @include m.glow-hover(#25d366);
 }
 
 .btn-ig {
-  background: #ff4d6d;
-  color: white;
-  @include glow-hover(#ff4d6d);
+  background: #e1306c;
+  color: #fff;
+  @include m.glow-hover(#e1306c);
 }

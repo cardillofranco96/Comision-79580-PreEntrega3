@@ -1,11 +1,24 @@
-// Paleta Gaming Flama Gamer
-$color-primary: #ff2a00;
-$color-secondary: #0d0d0d;
-$color-highlight: #ff8c00;
-$color-glow: #ff4500;
+// Paleta Flama Gamer
+$color-bg: #0b0b0b;
+$color-bg-soft: #111;
+$color-primary: #ff4500;
+$color-secondary: #ff9900;
+$color-accent: #ff1a1a;
 $color-text: #ffffff;
+$color-muted: #bbbbbb;
 
-$color-wsp: #25d366;
-$color-ig: #ff4d6d;
+// Tipografía
+$font-main: "Orbitron", sans-serif;
 
-$font-main: 'Orbitron', sans-serif;
+// Sombras gaming
+$glow-primary: 0 0 10px rgba(255, 69, 0, 0.7);
+$glow-secondary: 0 0 10px rgba(255, 153, 0, 0.7);
+
+// Bordes
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 16px;
+
+// Transiciones
+$transition-fast: 0.2s ease;
+$transition-normal: 0.4s ease;

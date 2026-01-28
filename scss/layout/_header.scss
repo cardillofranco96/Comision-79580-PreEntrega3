@@ -1,3 +1,25 @@
-.navbar {
-  background-color: #000;
+.hero {
+  width: 100%;
+  min-height: 100vh; /* ocupa toda la altura de la pantalla */
+  background-image: url("../img/fondo1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }

@@ -1,13 +1,45 @@
+@use "variables" as v;
+
+// Mixin para efecto glow gaming en hover
+@mixin glow-hover($color) {
+  transition: all v.$transition-normal;
+
+  &:hover {
+    background-color: $color;
+    box-shadow: 0 0 10px $color,
+                0 0 20px rgba($color, 0.6);
+    transform: translateY(-2px) scale(1.03);
+  }
+}
+
+// Mixin para centrar con flex
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin glow-hover($color) {
-  transition: all 0.3s ease;
+// Mixin para layout responsive simple
+@mixin responsive-text($mobile, $desktop) {
+  font-size: $mobile;
+
+  @media (min-width: 768px) {
+    font-size: $desktop;
+  }
+}
+
+// Mixin para cards gaming
+@mixin card-style {
+  background-color: v.$color-bg-soft;
+  border: 1px solid v.$color-primary;
+  border-radius: v.$radius-md;
+  padding: 20px;
+  color: v.$color-text;
+  box-shadow: v.$glow-primary;
+  transition: v.$transition-normal;
+
   &:hover {
-    box-shadow: 0 0 10px $color;
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px v.$color-primary;
   }
 }

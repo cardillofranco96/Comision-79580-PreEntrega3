@@ -1,4 +1,5 @@
+@use "../abstracts/mixins" as m;
+
 .card-flama {
-  @extend %card-base;
-  border: 1px solid #ff2a00;
+  @include m.card-style;
 }

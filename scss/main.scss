@@ -6,12 +6,12 @@
 @use "base/typography";
 
 @use "layout/header";
-@use "layout/footer";
 @use "layout/main";
+@use "layout/footer";
 
+@use "components/navbar";
 @use "components/buttons";
 @use "components/cards";
-@use "components/navbar";
 
 @use "pages/home";
 @use "pages/servicios";
