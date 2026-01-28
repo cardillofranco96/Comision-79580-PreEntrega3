@@ -1,12 +1,19 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/extends";
 
-@import "base/reset";
-@import "base/typography";
+@use "base/reset";
+@use "base/typography";
 
-@import "layout/navbar";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/main";
 
-@import "components/buttons";
-@import "components/cards";
+@use "components/buttons";
+@use "components/cards";
+@use "components/navbar";
 
-@import "pages/home";
+@use "pages/home";
+@use "pages/servicios";
+@use "pages/sobre-mi";
+@use "pages/contacto";

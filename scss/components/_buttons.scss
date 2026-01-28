@@ -1,11 +1,18 @@
 .btn-flama {
-  @include button-style($color-primary);
+  background: #ff2a00;
+  color: white;
+  border: none;
+  @include glow-hover(#ff4500);
 }
 
 .btn-wsp {
-  @include button-style($color-secondary);
+  background: #25d366;
+  color: white;
+  @include glow-hover(#25d366);
 }
 
 .btn-ig {
-  @include button-style(#e1306c);
+  background: #ff4d6d;
+  color: white;
+  @include glow-hover(#ff4d6d);
 }

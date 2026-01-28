@@ -4,17 +4,10 @@
   align-items: center;
 }
 
-@mixin button-style($bg) {
-  background-color: $bg;
-  color: white;
-  padding: 12px 22px;
-  border-radius: 10px;
-  border: none;
-  transition: 0.3s ease;
-  text-decoration: none;
-
+@mixin glow-hover($color) {
+  transition: all 0.3s ease;
   &:hover {
+    box-shadow: 0 0 10px $color;
     transform: scale(1.05);
-    filter: brightness(1.1);
   }
 }
